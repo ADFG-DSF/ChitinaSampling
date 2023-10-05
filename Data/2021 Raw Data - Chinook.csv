@@ -1,0 +1,497 @@
+Scale Card Number,Sampler,Sample week,Date,Stat week,Subdistrict,Subarea name,Subarea,Fishery (State/Fed),Gear,Wheel #,Whole Fish (Y/N),ME-Fork length,ME-A.fin length,Fish Number,Sex ,NVE Yellow Tag Number,Adipose Fin Present (Y/N),Notes (include radio tag # in this column),Age
+CS001,Smelcer,1,6/4/2021,23,GSD,Bridge to Tonsina,BT,F,FW,35,N,ND,ND,1,F,,ND,Fillet,1.3
+CS001,Smelcer,1,6/4/2021,23,GSD,Bridge to Tonsina,BT,S,DN,,Y,766,ND,2,F,,Y,,E3
+CS001,Smelcer,1,6/4/2021,23,GSD,Bridge to Tonsina,BT,S,DN,,Y,624,ND,3,M,,Y,,1.2
+CS001,Smelcer,1,6/4/2021,23,GSD,Bridge to Tonsina,BT,S,DN,,Y,832,616,4,M,,Y,,1.3
+CS001,Smelcer,1,6/4/2021,23,GSD,Bridge to Tonsina,BT,S,DN,,Y,732,BP004,5,F,,Y,,1.3
+CS002,Gorze,1,6/4/2021,23,GSD,Bridge to Tonsina,BT,S,DN,,N,815,595,1,F,,Y,,1.3
+DS001,Beshaw,1,6/4/2021,23,GSD,Bridge to Tonsina,BT,S,DN,,Y,846,659,1,F,,Y,,E3
+DS001,Beshaw,1,6/4/2021,23,GSD,Bridge to Tonsina,BT,S,DN,,Y,716,555,2,M,,Y,,1.3
+DS001,Beshaw,1,6/4/2021,23,GSD,Bridge to Tonsina,BT,S,DN,,Y,780,592,3,M,,Y,,E3
+AS001,Mikkelsen,1,6/5/2021,23,GSD,Bridge to Tonsina,BT,S,DN,,Y,857,678,1,M,,Y,,E4
+AS001,Mikkelsen,1,6/5/2021,23,GSD,Bridge to Tonsina,BT,S,DN,,N,ND,ND,2,F,11299,Y,108655,1.4
+BS001,Williams,1,6/6/2021,24,GSD,Bridge to Tonsina,BT,S,DN,,N,731,472,1,F,,Y,,1.3
+BS001,Williams,1,6/6/2021,24,GSD,Bridge to Tonsina,BT,S,DN,,Y,850,545,2,F,,Y,,1.3
+BS001,Williams,1,6/6/2021,24,GSD,Bridge to Tonsina,BT,S,DN,,Y,774,493,3,F,,Y,,1.3
+CS003,Smelcer,2,6/8/2021,24,GSD,Tonsina to Gakona,TG,F,FW,21,Y,811,515,1,F,,Y,,1.3
+CS003,Smelcer,2,6/8/2021,24,GSD,Tonsina to Gakona,TG,F,FW,21,Y,630,396,2,M,,Y,,1.2
+DS002,Beshaw,2,6/9/2021,24,GSD,Tonsina to Gakona,TG,F,FW,21,Y,589,457,1,M,,Y,,1.2
+AP001,Mikkelsen,2,6/10/2021,24,CSD,Below Bridge,BB,S,DN,,Y,763,487,1,F,,Y,,E3
+AP001,Mikkelsen,2,6/10/2021,24,CSD,Below Bridge,BB,S,DN,,Y,802,605,2,F,,Y,,1.3
+AP001,Mikkelsen,2,6/10/2021,24,CSD,Below Bridge,BB,S,DN,,Y,825,633,3,M,,Y,,E3
+AP001,Mikkelsen,2,6/10/2021,24,CSD,Below Bridge,BB,S,DN,,Y,772,594,4,F,,Y,,E3
+AP001,Mikkelsen,2,6/10/2021,24,CSD,Below Bridge,BB,S,DN,,Y,765,601,5,M,,Y,,1.3
+AP001,Mikkelsen,2,6/10/2021,24,CSD,Below Bridge,BB,S,DN,,Y,822,601,6,M,,Y,,E3
+BP001,Williams,2,6/10/2021,24,CSD,Below Bridge,BB,S,DN,,Y,812,622,1,F,,Y,,1.1
+BP001,Williams,2,6/10/2021,24,CSD,Below Bridge,BB,S,DN,,N,830,621,2,M,11458,Y,,E3
+BP001,Williams,2,6/10/2021,24,CSD,Below Bridge,BB,S,DN,,Y,870,659,3,M,,Y,,1.3
+BP001,Williams,2,6/10/2021,24,CSD,Below Bridge,BB,S,DN,,Y,787,609,4,F,,Y,,E3
+BP001,Williams,2,6/10/2021,24,CSD,Below Bridge,BB,S,DN,,Y,806,608,5,M,,Y,,1.3
+AP002,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,934,668,1,F,,Y,,E3
+AP002,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,770,576,2,F,,Y,,1.3
+AP002,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,775,588,3,F,,Y,,1.3
+AP002,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,598,444,4,M,,Y,,1.2
+AP003,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,782,670,1,F,,Y,,1.3
+AP003,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,780,524,2,F,,Y,,1.3
+AP003,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,864,750,3,M,,Y,,E4
+AP003,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,798,617,4,M,,Y,,E3
+AP003,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,601,449,5,M,,Y,,1.2
+AP003,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,594,445,6,M,,Y,,1.2
+AP003,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,596,450,7,M,,Y,,E3
+AP003,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,780,574,8,F,,Y,,1.3
+AP003,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,838,648,9,F,,Y,,1.3
+AP003,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,824,640,10,M,,Y,,E3
+AP004,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,817,602,1,F,,Y,,1.3
+AP004,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,568,429,2,M,,Y,,1.2
+AP004,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,808,632,3,M,,Y,,E3
+AP005,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,877,676,1,F,,Y,,E3
+AP005,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,865,672,2,F,,Y,,1.4
+AP005,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,790,582,3,M,,Y,,E3
+AP005,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,873,665,4,M,,Y,,1.3
+AP005,Mikkelsen,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,545,407,5,ND,,Y,,1.2
+BP002,Williams,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,822,630,1,M,,Y,Right side scales,E3
+BP002,Williams,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,728,548,2,M,,Y,,1.3
+BP002,Williams,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,863,647,3,F,,Y,,E3
+BP002,Williams,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,815,633,4,F,,Y,,1.4
+BP002,Williams,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,606,456,5,M,,Y,,1.2
+BP002,Williams,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,745,563,6,M,11993,Y,,1.3
+BP002,Williams,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,760,580,7,M,,Y,,1.3
+BP002,Williams,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,800,607,8,F,,Y,,1.3
+BP002,Williams,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,506,388,9,M,,Y,,1.2
+BP002,Williams,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,513,396,10,M,,Y,,1.2
+BP003,Williams,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,662,548,1,F,,Y,,1.3
+BP003,Williams,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,819,627,2,F,,Y,,2.3
+BP003,Williams,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,831,624,3,F,,Y,,E3
+BP003,Williams,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,787,604,4,F,11622,Y,151.075 A-12,1.3
+BP003,Williams,2,6/11/2021,24,CSD,Below Bridge,BB,S,DN,,Y,552,424,5,M,,Y,right side scales,1.2
+CS004,Smelcer,2,6/12/2021,24,GSD,Bridge to Tonsina,BT,F,FW,35,Y,745,459,1,F,,Y,,E3
+DS003,Beshaw,2,6/12/2021,24,GSD,Bridge to Tonsina,BT,S,DN,,Y,815,605,1,F,,Y,,1.3
+DS004,Beshaw,3,6/16/2021,25,GSD,Tonsina to Gakona,TG,F,FW,34,Y,700,530,1,M,,Y,,E3
+DS004,Beshaw,3,6/16/2021,25,GSD,Tonsina to Gakona,TG,F,FW,34,Y,800,610,2,M,,Y,,E3
+AP006,Mikkelsen,3,6/17/2021,25,CSD,Below Bridge,BB,S,DN,,Y,760,587,1,F,,Y,,E3
+AP007,Mikkelsen,3,6/18/2021,25,CSD,Below Bridge,BB,S,DN,,N,ND,ND,1,ND,17314,Y,,1.3
+AP007,Mikkelsen,3,6/18/2021,25,CSD,Below Bridge,BB,S,DN,,Y,564,430,2,F,,Y,,1.2
+AP007,Mikkelsen,3,6/18/2021,25,CSD,Below Bridge,BB,S,DN,,Y,870,666,3,M,12462,Y,,1.3
+BP004,Williams,3,6/19/2021,25,CSD,Below Bridge,BB,S,DN,,Y,838,633,1,F,,Y,,1.3
+BP004,Williams,3,6/19/2021,25,CSD,Below Bridge,BB,S,DN,,Y,698,552,2,F,,Y,,2.3
+BP004,Williams,3,6/19/2021,25,CSD,Below Bridge,BB,S,DN,,Y,795,603,3,F,,Y,,E3
+BP004,Williams,3,6/19/2021,25,CSD,Below Bridge,BB,S,DN,,Y,912,691,4,M,,Y,,1.3
+BP004,Williams,3,6/19/2021,25,CSD,Below Bridge,BB,S,DN,,Y,820,626,5,F,,Y,,1.3
+BP004,Williams,3,6/19/2021,25,CSD,Below Bridge,BB,S,DN,,Y,850,570,6,M,,Y,,1.3
+AP008,Mikkelsen,4,6/26/2021,26,CSD,Below Bridge,BB,S,DN,,Y,685,481,1,M,,,,1.3
+CS005,Smelcer,5,6/30/2021,27,GSD,Bridge to Tonsina,BT,F,FW,35,Y,821,635,1,F,,Y,,E2
+CS006,Smelcer,6,7/7/2021,28,GSD,Tonsina to Gakona,TG,F,FW,21,Y,813,619,1,F,,Y,,1.3
+CS007,Smelcer,6,7/8/2021,28,GSD,Bridge to Tonsina,BT,F,FW,35,Y,872,671,1,F,11812,Y,151.073 A-26,1.3
+AS002,Mikkelsen,6,7/10/2021,28,GSD,Bridge to Tonsina,BT,F,FW,115,Y,804,612,1,M,,Y,,E3
+AS002,Mikkelsen,6,7/10/2021,28,GSD,Bridge to Tonsina,BT,F,FW,115,Y,803,605,2,F,,,,1.3
+AS002,Mikkelsen,6,7/10/2021,28,GSD,Bridge to Tonsina,BT,F,FW,115,Y,764,565,3,M,,,,E3
+AS003,Mikkelsen,6,7/11/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,405,312,1,M,,Y,right side,E3
+AS003,Mikkelsen,6,7/11/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,547,414,2,M,,Y,,1.2
+AS003,Mikkelsen,6,7/11/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,310,245,3,M,,Y,,E4
+AS003,Mikkelsen,6,7/11/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,325,248,4,M,,Y,,1.1
+AS003,Mikkelsen,6,7/11/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,326,245,5,M,,Y,right side,2.1
+AS003,Mikkelsen,6,7/11/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,370,278,6,M,,Y,,E4
+AS003,Mikkelsen,6,7/11/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,467,348,7,M,,Y,,1.2
+AS004,Mikkelsen,6,7/12/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,803,610,1,M,,Y,,1.1
+AS004,Mikkelsen,6,7/12/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,406,314,2,M,,Y,,2.1
+AS004,Mikkelsen,6,7/12/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,360,277,3,M,,Y,,1.1
+AS004,Mikkelsen,6,7/12/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,385,297,4,M,,Y,,E3
+AS004,Mikkelsen,6,7/12/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,335,256,5,M,,Y,,1.1
+AS004,Mikkelsen,6,7/12/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,360,282,6,M,,Y,,E3
+AS004,Mikkelsen,6,7/12/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,378,215,7,M,,Y,,2.1
+AS004,Mikkelsen,6,7/12/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,306,234,8,M,,Y,,1.1
+AS004,Mikkelsen,6,7/12/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,305,227,9,M,,Y,,1.1
+CS008,Smelcer,7,7/13/2021,29,GSD,Bridge to Tonsina,BT,F,FW,35,Y,380,302,1,M,,Y,,1.1
+BS002,Williams,7,7/15/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,584,442,1,M,,Y,,E3
+BS002,Williams,7,7/15/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,502,425,2,M,,Y,,1.2
+BS002,Williams,7,7/15/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,575,440,3,M,12115,Y,,1.2
+BS002,Williams,7,7/15/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,584,442,1,M,,Y,,E5
+BS002,Williams,7,7/15/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,502,425,2,M,,Y,,E5
+BS002,Williams,7,7/15/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,575,440,3,M,12115,Y,,E5
+DS005,Willard,7,7/16/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,358,265,1,M,,Y,,1.1
+DS005,Willard,7,7/16/2021,29,GSD,Bridge to Tonsina,BT,F,FW,115,Y,349,266,2,M,,Y,,2.1
+DS006,Willard,8,7/21/2021,30,GSD,Bridge to Tonsina,BT,F,FW,115,Y,792,595,1,M,,Y,,E3
+DS007,Willard,8,7/22/2021,30,GSD,Bridge to Tonsina,BT,F,FW,110,Y,520,402,1,M,,Y,,1.2
+DS007,Willard,8,7/22/2021,30,GSD,Bridge to Tonsina,BT,F,FW,110,Y,364,276,2,M,,Y,,1.1
+DS008,Willard,8,7/24/2021,30,GSD,Bridge to Tonsina,BT,F,FW,115,Y,972,690,1,F,,Y,,1.4
+AS005,Mikkelsen,8,7/26/2021,31,GSD,Bridge to Tonsina,BT,F,FW,115,Y,813,605,1,F,,Y,,1.3
+DS009,Willard,9,7/30/2021,31,GSD,Bridge to Tonsina,BT,F,FW,115,Y,379,285,1,M,,Y,,1.1
+DS010,Willard,10,8/4/2021,32,GSD,Bridge to Tonsina,BT,F,FW,110,Y,873,659,1,M,,Y,,1.3
+AS006,Mikkelsen,10,8/8/2021,33,GSD,Bridge to Tonsina,BT,F,FW,115,Y,827,525,1,F,,Y,,E3
+AS007,Mikkelsen,11,8/10/2021,33,GSD,Bridge to Tonsina,BT,F,FW,115,Y,844,565,1,F,,Y,,1.3
+AS008,Mikkelsen,11,8/13/2021,33,GSD,Bridge to Tonsina,BT,F,FW,115,Y,325,246,1,M,,Y,,1.1
+DS011,Willard,12,8/22/2021,35,GSD,Bridge to Tonsina,BT,F,FW,115,Y,792,605,1,F,,Y,,E3
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
+,,,,0,,,Wrong,,,,,,,,,,,,
