@@ -24,3 +24,24 @@ Separate .csv files are provided for sampling and reported harvest, for each fis
 ### R/
 
 * Chitina_sampling_2019_2022.R: all data operations & calculations for analysis
+
+### output/
+
+R-generated summary tables, corresponding to numbered tables in the report.  Tables 
+were written to external .csv files, with the intent of facilitating copy-pasting
+to the appropriate columns.
+
+* T5_update.csv and T6_update.csv: Estimated weekly Hatchery proportion and contributions 
+to the GSD and CSD fisheries, respectively, with standard errors.
+
+* T8_update.csv (and 13, 16, 19): Sockeye salmon ASL for the GSD fishery for each year.
+Estimates of proportion and harvest contribution (plus standard errors) are temporally
+stratified according to reported harvest quartiles.
+
+* T10_update.csv (and 14, 17, 20): Sockeye salmon ASL for the CSD fishery for each year.
+Estimates of proportion and harvest contribution (plus standard errors) are temporally
+stratified according to reported harvest quartiles.
+
+* T12_update.csv (and 15, 18, 21): Chinook salmon ASL for both fisheries combined for each year.
+Estimates of proportion and harvest contribution (plus standard errors) are temporally
+stratified according to reported harvest quartiles.

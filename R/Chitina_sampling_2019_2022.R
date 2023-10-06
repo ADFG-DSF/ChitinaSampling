@@ -651,3 +651,23 @@ for(i in 1:4) {
                  strat=strata_king_pooled,  
                  Nstrat=NULL))
 }
+
+
+### Writing tables to external .csv files!
+### The tables created here are similar in format to T5 (and similar) and T8 (and similar) 
+### with the intent of easily copy-pasting columns as needed.
+
+write.csv(T5_update, file="output/T5_update.csv")
+write.csv(T6_update, file="output/T6_update.csv")
+
+# GSD_RED_ASL_update  
+tbl_num <- c(8, 13, 16, 19)
+for(i in 1:4) write.csv(GSD_RED_ASL_update[[i]], file=paste0("output/T", tbl_num[i], "_update.csv"))
+
+# CSD_RED_ASL_update  
+tbl_num <- c(10, 14, 17, 20)
+for(i in 1:4) write.csv(CSD_RED_ASL_update[[i]], file=paste0("output/T", tbl_num[i], "_update.csv"))
+
+# KING_ASL_update  
+tbl_num <- c(12, 15, 18, 21)
+for(i in 1:4) write.csv(KING_ASL_update[[i]], file=paste0("output/T", tbl_num[i], "_update.csv"))
