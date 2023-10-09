@@ -657,6 +657,8 @@ for(i in 1:4) {
 ### The tables created here are similar in format to T5 (and similar) and T8 (and similar) 
 ### with the intent of easily copy-pasting columns as needed.
 
+### TODO: maybe split estimate & se into separate (additional) columns if that's easier for formatting
+
 write.csv(T5_update, file="output/T5_update.csv")
 write.csv(T6_update, file="output/T6_update.csv")
 
