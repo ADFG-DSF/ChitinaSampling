@@ -147,31 +147,31 @@ colnames(CSD_allyrstab) <- dimnames(sockeye_allyrstab)$year
 ## calculations from operational plan!
 
 # filling in variables
-n_i <- apply(sockeye_allyrstab, c(1,3,4), sum)
-n_i_GSD <- n_i[, dimnames(n_i)$subdistrict == "Glennallen Subdistrict", ]
-n_i_CSD <- n_i[, dimnames(n_i)$subdistrict == "Chitina Subdistrict", ]
-o_hi <- sockeye_allyrstab[, dimnames(sockeye_allyrstab)$origin_h_w =="H" , , ]
-o_hi_GSD <- o_hi[, dimnames(o_hi)$subdistrict == "Glennallen Subdistrict", ]
-o_hi_CSD <- o_hi[, dimnames(o_hi)$subdistrict == "Chitina Subdistrict", ]
+n_ji <- apply(sockeye_allyrstab, c(1,3,4), sum)
+n_ji_GSD <- n_ji[, dimnames(n_ji)$subdistrict == "Glennallen Subdistrict", ]
+n_ji_CSD <- n_ji[, dimnames(n_ji)$subdistrict == "Chitina Subdistrict", ]
+o_ji <- sockeye_allyrstab[, dimnames(sockeye_allyrstab)$origin_h_w =="H" , , ]
+o_ji_GSD <- o_ji[, dimnames(o_ji)$subdistrict == "Glennallen Subdistrict", ]
+o_ji_CSD <- o_ji[, dimnames(o_ji)$subdistrict == "Chitina Subdistrict", ]
 
 # this would be a logical place to expand total harvest
 N_GSD <- GSD_allyrstab
 N_CSD <- CSD_allyrstab
 
 # equation 1
-C_hi_GSD <- o_hi_GSD/n_i_GSD*N_GSD
-C_hi_CSD <- o_hi_CSD/n_i_CSD*N_CSD
+C_ji_GSD <- o_ji_GSD/n_ji_GSD*N_GSD
+C_ji_CSD <- o_ji_CSD/n_ji_CSD*N_CSD
 
 # equation 2
-C_sh_GSD <- colSums(C_hi_GSD, na.rm=T)
-C_sh_CSD <- colSums(C_hi_CSD, na.rm=T)
+C_j_GSD <- colSums(C_ji_GSD, na.rm=T)
+C_j_CSD <- colSums(C_ji_CSD, na.rm=T)
 # NOTE: I don't think this is appropriate for 2022 GSD, given the missing data
 
 # for table
-p_GSD <- o_hi_GSD/n_i_GSD
-p_CSD <- o_hi_CSD/n_i_CSD
-vp_GSD <- p_GSD*(1-p_GSD)/(n_i_GSD-1)
-vp_CSD <- p_CSD*(1-p_CSD)/(n_i_CSD-1)
+p_GSD <- o_ji_GSD/n_ji_GSD
+p_CSD <- o_ji_CSD/n_ji_CSD
+vp_GSD <- p_GSD*(1-p_GSD)/(n_ji_GSD-1)
+vp_CSD <- p_CSD*(1-p_CSD)/(n_ji_CSD-1)
 
 # making a quick exploratory plot of the proportions
 par(mfrow=c(1,2))
@@ -190,23 +190,22 @@ for(i in 1:4) {
 lines(as.numeric(rownames(p_CSD)), rowMeans(p_CSD, na.rm=T), lty=2)
 legend("topleft",lwd=2,col=2:5,legend=years)
 
-# equation 3 -- is this needed??
-# equation 4 -- is this needed??
+# equations 3 & 4 from OP are not appropriate
 
-# equation 5 split apart by strata (makes more sense)
-V_C_hi_GSD <- (N_GSD^2)*o_hi_GSD/(n_i_GSD^2)*(1-p_GSD)
-V_C_hi_CSD <- (N_CSD^2)*o_hi_CSD/(n_i_CSD^2)*(1-p_CSD)
-V_C_h_GSD <- colSums(V_C_hi_GSD, na.rm=T)
-V_C_h_CSD <- colSums(V_C_hi_CSD, na.rm=T)
+# equation 3 split apart by strata (makes more sense)
+V_C_ji_GSD <- (N_GSD^2)*o_ji_GSD/(n_ji_GSD^2)*(1-p_GSD)
+V_C_ji_CSD <- (N_CSD^2)*o_ji_CSD/(n_ji_CSD^2)*(1-p_CSD)
+V_C_h_GSD <- colSums(V_C_ji_GSD, na.rm=T)
+V_C_h_CSD <- colSums(V_C_ji_CSD, na.rm=T)
 
-SE_C_hi_GSD <- sqrt(V_C_hi_GSD)
+SE_C_ji_GSD <- sqrt(V_C_ji_GSD)
 SE_C_h_GSD <- sqrt(V_C_h_GSD)
-SE_C_hi_CSD <- sqrt(V_C_hi_CSD)
+SE_C_ji_CSD <- sqrt(V_C_ji_CSD)
 SE_C_h_CSD <- sqrt(V_C_h_CSD)
 
 printse <- function(est, se, percent=F, digits=2) {
   if(percent) {
-    out <- paste0(round(100*est, digits), "% (", round(100*se, digits),"%)")
+    out <- paste0(round(100*est, digits), " (", round(100*se, digits),")%")
   } else {
     out <- paste0(round(est, digits), " (", round(se, digits),")")
   }
@@ -214,21 +213,29 @@ printse <- function(est, se, percent=F, digits=2) {
 }
 
 # making tables that mimic the structure of T5 and T6 in report
-T5_update <- data.frame(1:nrow(n_i_GSD))
+T5_update <- data.frame(1:nrow(n_ji_GSD))
 for(i in seq_along(years)) {
-  T5_update[, 3*(i-1)+1] <- n_i_GSD[,i]
+  T5_update[, 3*(i-1)+1] <- n_ji_GSD[,i]
   T5_update[, 3*(i-1)+2] <- printse(p_GSD[,i], sqrt(vp_GSD[,i]), percent=T, digits=1)
-  T5_update[, 3*(i-1)+3] <- printse(C_hi_GSD[,i], SE_C_hi_GSD[,i], digits=0)
+  T5_update[, 3*(i-1)+3] <- printse(C_ji_GSD[,i], SE_C_ji_GSD[,i], digits=0)
 }
 names(T5_update) <- paste(rep(years,each=3), rep(c("n","p","c")))
+lastrow <- rep("", ncol(T5_update))
+lastrow[3*(1:4)] <- printse(colSums(C_ji_GSD, na.rm=T), sqrt(colSums(V_C_ji_GSD, na.rm=T)), digits=0)
+T5_update <- rbind(T5_update, lastrow)
+rownames(T5_update) <- c(rownames(n_ji_GSD), "total")
 
-T6_update <- data.frame(1:nrow(n_i_CSD))
+T6_update <- data.frame(1:nrow(n_ji_CSD))
 for(i in seq_along(years)) {
-  T6_update[, 3*(i-1)+1] <- n_i_CSD[,i]
+  T6_update[, 3*(i-1)+1] <- n_ji_CSD[,i]
   T6_update[, 3*(i-1)+2] <- printse(p_CSD[,i], sqrt(vp_CSD[,i]), percent=T, digits=1)
-  T6_update[, 3*(i-1)+3] <- printse(C_hi_CSD[,i], SE_C_hi_CSD[,i], digits=0)
+  T6_update[, 3*(i-1)+3] <- printse(C_ji_CSD[,i], SE_C_ji_CSD[,i], digits=0)
 }
 names(T6_update) <- paste(rep(years,each=3), rep(c("n","p","c")))
+lastrow <- rep("", ncol(T6_update))
+lastrow[3*(1:4)] <- printse(colSums(C_ji_CSD, na.rm=T), sqrt(colSums(V_C_ji_CSD, na.rm=T)), digits=0)
+T6_update <- rbind(T6_update, lastrow)
+rownames(T6_update) <- c(rownames(n_ji_CSD), "total")
 
 
 
@@ -375,9 +382,9 @@ stratprop <- function(cat, strat, Nstrat, Ntot=NULL) { # membership vec, strata 
   if(is.null(Ntot)) Ntot <- sum(Nt)
   pz <- Nz/Ntot   ## -- this would be where to redefine Ntot or similar
   vpz <- vNz/(Ntot^2)
-  prop_for_tab <- paste0(round(100*pz, 2), "% (", round(100*sqrt(vpz), 2), "%)")
+  prop_for_tab <- paste0(round(100*pz, 1), " (", round(100*sqrt(vpz), 1), ")%")
   harv_for_tab <- paste0(round(Nz, 0), " (", round(sqrt(vNz), 0), ")")
-  data.frame(nz,pz,vpz,prop_for_tab,harv_for_tab)
+  data.frame(nz,pz,vpz,prop_for_tab,harv_for_tab,Nz)
 }
 
 ## chi-squared test to see if stratification is necessary
