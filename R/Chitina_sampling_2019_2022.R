@@ -72,6 +72,84 @@ CSD[[2]] <- CSD[[2]] %>% rename(red=sockeye)
 checknames(x=CSD)
 
 
+## A relatively small number of rows (~1% of fish) were missing sample_week in  
+## REPORTED HARVEST (GSD and CSD) because dates fell outside of the weeks defined
+## for ASL/otolith sampling.
+## ASSIGNING THESE TO EARLIEST/LATEST SAMPLE WEEK FOR THE RESPECTIVE YEAR, depending
+## on whether dates were before/after weeks were defined.
+## Note that these are only used for ASL stratification scheme, in which strata 
+## are defined by multiple weeks.
+## This is done so that totals will be consistent among tables/publications.
+
+# checking consistency in harvdate
+sapply(GSD, function(x) head(x$harvdate))
+sapply(CSD, function(x) head(x$harvdate))
+# all are formatted consistently!
+
+# reformatting dates as dates
+for(i in 1:length(years)) {
+  GSD[[i]]$harvdate <- as.Date(GSD[[i]]$harvdate, format="%m/%d/%Y")
+  CSD[[i]]$harvdate <- as.Date(CSD[[i]]$harvdate, format="%m/%d/%Y")
+}
+
+# making sure it worked!
+for(i in 1:length(years)) {
+  summary(GSD[[i]]$harvdate) %>% print
+  summary(CSD[[i]]$harvdate) %>% print
+}
+
+# extracting month, and checking NA values for sample_week
+for(i in 1:length(years)) {
+  # GSD[[i]]$month <- format(GSD[[i]]$harvdate, "%m")
+  # with(GSD[[i]], table(month, sample_week, useNA="ifany")) %>% print
+  CSD[[i]]$month <- format(CSD[[i]]$harvdate, "%m")
+  with(CSD[[i]], table(month, sample_week, useNA="ifany")) %>% print
+}
+
+## I think I should just redefine sample_week - LOTS of missing entries for 2020
+sample_weeks <- read.csv("Data/sample_weeks.csv")
+firstdates <- lastdates <- matrix(nrow=nrow(sample_weeks), ncol=ncol(sample_weeks)-1)
+for(i in 1:nrow(sample_weeks)) {
+  for(j in 2:ncol(sample_weeks)) {
+    firstdates[i, j-1] <- strsplit(sample_weeks[i,j], " - ")[[1]][1] %>% 
+      paste0("/",years[j-1]) #%>%
+    # as.Date(format="%m/%d/%Y")
+    lastdates[i, j-1] <- strsplit(sample_weeks[i,j], " - ")[[1]][2] %>% 
+      paste0("/",years[j-1]) %>% str_remove_all("b")#%>%
+    # as.Date(format="%m/%d/%Y")
+  }
+}
+
+for(i in 1:length(years)) {
+  GSD[[i]]$sample_week2 <- as.numeric(cut(GSD[[i]]$harvdate, 
+                                          c(min(GSD[[i]]$harvdate, na.rm=TRUE), 
+                                            # the weird [] thing in the following line excludes 1 line if 2019 and 2 lines otherwise
+                                            as.Date(firstdates[,i], format="%m/%d/%Y")[-(1:(1+(i!=1)))],
+                                            max(GSD[[i]]$harvdate, na.rm=TRUE)),
+                                          right=FALSE, include.lowest=TRUE)) - (i==1)  # the subtraction includes week zero for 2019
+  with(GSD[[i]], table(sample_week2, sample_week, useNA="ifany")) %>% print
+}
+for(i in 1:length(years)) {
+  CSD[[i]]$sample_week2 <- as.numeric(cut(CSD[[i]]$harvdate, 
+                                          c(min(CSD[[i]]$harvdate, na.rm=TRUE), 
+                                            # the weird [] thing in the following line excludes 1 line if 2019 and 2 lines otherwise
+                                            as.Date(firstdates[,i], format="%m/%d/%Y")[-(1:(1+(i!=1)))],
+                                            max(CSD[[i]]$harvdate, na.rm=TRUE)),
+                                          right=FALSE, include.lowest=TRUE)) - (i==1)  # the subtraction includes week zero for 2019
+  with(CSD[[i]], table(sample_week2, sample_week, useNA="ifany")) %>% print
+}
+
+
+## this is scary but I'm moving this to the ASL section!!
+
+# ##### rewriting $sample_week from $sample_week2
+# for(i in 1:length(years)) {
+#   CSD[[i]]$sample_week <- CSD[[i]]$sample_week2
+#   GSD[[i]]$sample_week <- GSD[[i]]$sample_week2
+# }
+
+
+
 ## data check: tabulating reported harvest by sample week
 # note: this only reports the existence of rows of data, NOT totals!!!
 sapply(CSD, function(x) table(x$sample_week, useNA = "ifany"))
@@ -213,34 +291,77 @@ printse <- function(est, se, percent=F, digits=2) {
 }
 
 # making tables that mimic the structure of T5 and T6 in report
+# T5_update <- data.frame(1:nrow(n_ji_GSD))
+# for(i in seq_along(years)) {
+#   T5_update[, 3*(i-1)+1] <- n_ji_GSD[,i]
+#   T5_update[, 3*(i-1)+2] <- printse(p_GSD[,i], sqrt(vp_GSD[,i]), percent=T, digits=1)
+#   T5_update[, 3*(i-1)+3] <- printse(C_ji_GSD[,i], SE_C_ji_GSD[,i], digits=0)
+# }
+# names(T5_update) <- paste(rep(years,each=3), rep(c("n","p","c")))
+# lastrow <- rep("", ncol(T5_update))
+# lastrow[3*(1:4)] <- printse(colSums(C_ji_GSD, na.rm=T), sqrt(colSums(V_C_ji_GSD, na.rm=T)), digits=0)
+# T5_update <- rbind(T5_update, lastrow)
+# rownames(T5_update) <- c(rownames(n_ji_GSD), "total")
+
 T5_update <- data.frame(1:nrow(n_ji_GSD))
 for(i in seq_along(years)) {
-  T5_update[, 3*(i-1)+1] <- n_ji_GSD[,i]
-  T5_update[, 3*(i-1)+2] <- printse(p_GSD[,i], sqrt(vp_GSD[,i]), percent=T, digits=1)
-  T5_update[, 3*(i-1)+3] <- printse(C_ji_GSD[,i], SE_C_ji_GSD[,i], digits=0)
+  T5_update[, 7*(i-1)+1] <- n_ji_GSD[,i]
+  T5_update[, 7*(i-1)+2] <- printse(p_GSD[,i], sqrt(vp_GSD[,i]), percent=T, digits=1)
+  T5_update[, 7*(i-1)+3] <- p_GSD[,i]
+  T5_update[, 7*(i-1)+4] <- sqrt(vp_GSD[,i])
+  T5_update[, 7*(i-1)+5] <- printse(C_ji_GSD[,i], SE_C_ji_GSD[,i], digits=0)
+  T5_update[, 7*(i-1)+6] <- C_ji_GSD[,i]
+  T5_update[, 7*(i-1)+7] <- SE_C_ji_GSD[,i]
 }
-names(T5_update) <- paste(rep(years,each=3), rep(c("n","p","c")))
+names(T5_update) <- paste(rep(years,each=7), rep(c("n","p","p_raw","se_p_raw","c","c_raw","se_c_raw")))
 lastrow <- rep("", ncol(T5_update))
-lastrow[3*(1:4)] <- printse(colSums(C_ji_GSD, na.rm=T), sqrt(colSums(V_C_ji_GSD, na.rm=T)), digits=0)
+lastrow[7*(1:4)-2] <- printse(colSums(C_ji_GSD, na.rm=T), sqrt(colSums(V_C_ji_GSD, na.rm=T)), digits=0)
+lastrow[7*(1:4)-1] <- colSums(C_ji_GSD, na.rm=T)
+lastrow[7*(1:4)-0] <- sqrt(colSums(V_C_ji_GSD, na.rm=T))
 T5_update <- rbind(T5_update, lastrow)
 rownames(T5_update) <- c(rownames(n_ji_GSD), "total")
 
+# T6_update <- data.frame(1:nrow(n_ji_CSD))
+# for(i in seq_along(years)) {
+#   T6_update[, 3*(i-1)+1] <- n_ji_CSD[,i]
+#   T6_update[, 3*(i-1)+2] <- printse(p_CSD[,i], sqrt(vp_CSD[,i]), percent=T, digits=1)
+#   T6_update[, 3*(i-1)+3] <- printse(C_ji_CSD[,i], SE_C_ji_CSD[,i], digits=0)
+# }
+# names(T6_update) <- paste(rep(years,each=3), rep(c("n","p","c")))
+# lastrow <- rep("", ncol(T6_update))
+# lastrow[3*(1:4)] <- printse(colSums(C_ji_CSD, na.rm=T), sqrt(colSums(V_C_ji_CSD, na.rm=T)), digits=0)
+# T6_update <- rbind(T6_update, lastrow)
+# rownames(T6_update) <- c(rownames(n_ji_CSD), "total")
+
 T6_update <- data.frame(1:nrow(n_ji_CSD))
 for(i in seq_along(years)) {
-  T6_update[, 3*(i-1)+1] <- n_ji_CSD[,i]
-  T6_update[, 3*(i-1)+2] <- printse(p_CSD[,i], sqrt(vp_CSD[,i]), percent=T, digits=1)
-  T6_update[, 3*(i-1)+3] <- printse(C_ji_CSD[,i], SE_C_ji_CSD[,i], digits=0)
+  T6_update[, 7*(i-1)+1] <- n_ji_CSD[,i]
+  T6_update[, 7*(i-1)+2] <- printse(p_CSD[,i], sqrt(vp_CSD[,i]), percent=T, digits=1)
+  T6_update[, 7*(i-1)+3] <- p_CSD[,i]
+  T6_update[, 7*(i-1)+4] <- sqrt(vp_CSD[,i])
+  T6_update[, 7*(i-1)+5] <- printse(C_ji_CSD[,i], SE_C_ji_CSD[,i], digits=0)
+  T6_update[, 7*(i-1)+6] <- C_ji_CSD[,i]
+  T6_update[, 7*(i-1)+7] <- SE_C_ji_CSD[,i]
 }
-names(T6_update) <- paste(rep(years,each=3), rep(c("n","p","c")))
+names(T6_update) <- paste(rep(years,each=7), rep(c("n","p","p_raw","se_p_raw","c","c_raw","se_c_raw")))
 lastrow <- rep("", ncol(T6_update))
-lastrow[3*(1:4)] <- printse(colSums(C_ji_CSD, na.rm=T), sqrt(colSums(V_C_ji_CSD, na.rm=T)), digits=0)
+lastrow[7*(1:4)-2] <- printse(colSums(C_ji_CSD, na.rm=T), sqrt(colSums(V_C_ji_CSD, na.rm=T)), digits=0)
+lastrow[7*(1:4)-1] <- colSums(C_ji_CSD, na.rm=T)
+lastrow[7*(1:4)-0] <- sqrt(colSums(V_C_ji_CSD, na.rm=T))
 T6_update <- rbind(T6_update, lastrow)
 rownames(T6_update) <- c(rownames(n_ji_CSD), "total")
 
 
 
-
 ### Sockeye and Chinook Salmon ASL Composition
+
+##### rewriting $sample_week from $sample_week2
+for(i in 1:length(years)) {
+  CSD[[i]]$sample_week <- CSD[[i]]$sample_week2
+  GSD[[i]]$sample_week <- GSD[[i]]$sample_week2
+}
+
+
 
 ## First testing if stratification is needed
 
@@ -384,7 +505,8 @@ stratprop <- function(cat, strat, Nstrat, Ntot=NULL) { # membership vec, strata 
   vpz <- vNz/(Ntot^2)
   prop_for_tab <- paste0(round(100*pz, 1), " (", round(100*sqrt(vpz), 1), ")%")
   harv_for_tab <- paste0(round(Nz, 0), " (", round(sqrt(vNz), 0), ")")
-  data.frame(nz,pz,vpz,prop_for_tab,harv_for_tab,Nz)
+  data.frame(nz,prop_for_tab,p_raw=pz,se_p_raw=sqrt(vpz),
+             harv_for_tab,c_raw=Nz,se_c_raw=sqrt(vNz))
 }
 
 ## chi-squared test to see if stratification is necessary
@@ -666,6 +788,52 @@ for(i in 1:4) {
 
 ### TODO: maybe split estimate & se into separate (additional) columns if that's easier for formatting
 
+### fix it in stratprop(), just make new columns - done
+### make new columns in t5_update and t6_update - done
+## still need table of quartile dates
+
+# CSD_redbyweek_quartiles 
+# GSD_redbyweek_quartiles 
+# CSD_kingbyweek_quartiles 
+# GSD_kingbyweek_quartiles 
+# pooled_kingbyweek_quartiles 
+CSD_redbyweek_quartiles1 <- GSD_redbyweek_quartiles1 <- pooled_kingbyweek_quartiles1 <- list()
+# sample_weeks
+# firstdates
+firstdates1 <- as.data.frame(cbind(sample_week=0:13, firstdates))
+for(i in 2:5) firstdates1[,i] <- as.Date(firstdates1[,i], format="%m/%d/%Y")
+firstdates1[,1] <- as.numeric(firstdates1[,1])
+lastdates1 <- as.data.frame(cbind(sample_week=0:13, lastdates))
+for(i in 2:5) lastdates1[,i] <- as.Date(lastdates1[,i], format="%m/%d/%Y")
+lastdates1[,1] <- as.numeric(lastdates1[,1])
+
+
+### ok this is just going to be ugly
+strat_table <- data.frame(fishery=c(rep("Red GSD", 4), rep("Red CSD", 4), rep("King pooled", 4)),
+                          stratum=rep(1:4, 3))
+strat_table[, 1:16+2] <- NA
+for(iyear in 1:4) {
+  for(istratum in 1:4) {
+    strat_table[istratum, iyear*4-1] <- with(GSD_redbyweek_quartiles[[iyear]], min(sample_week[strata==istratum])) # min week GSD
+    strat_table[istratum, iyear*4-0] <- with(GSD_redbyweek_quartiles[[iyear]], max(sample_week[strata==istratum])) # max week GSD
+    strat_table[istratum, iyear*4+1] <- firstdates1[(0:13)==strat_table[istratum, iyear*4-1], iyear+1] %>% as.character # min date GSD
+    strat_table[istratum, iyear*4+2] <- lastdates1[(0:13)==strat_table[istratum, iyear*4-0], iyear+1] %>% as.character # max date GSD
+    
+    strat_table[istratum+4, iyear*4-1] <- with(CSD_redbyweek_quartiles[[iyear]], min(sample_week[strata==istratum])) # min week CSD
+    strat_table[istratum+4, iyear*4-0] <- with(CSD_redbyweek_quartiles[[iyear]], max(sample_week[strata==istratum])) # max week CSD
+    strat_table[istratum+4, iyear*4+1] <- firstdates1[(0:13)==strat_table[istratum+4, iyear*4-1], iyear+1] %>% as.character# min date CSD
+    strat_table[istratum+4, iyear*4+2] <- lastdates1[(0:13)==strat_table[istratum+4, iyear*4-0], iyear+1] %>% as.character# max date CSD
+    
+    strat_table[istratum+8, iyear*4-1] <- with(pooled_kingbyweek_quartiles[[iyear]], min(sample_week[strata==istratum]))# min week king
+    strat_table[istratum+8, iyear*4-0] <- with(pooled_kingbyweek_quartiles[[iyear]], max(sample_week[strata==istratum]))# max week king
+    strat_table[istratum+8, iyear*4+1] <- firstdates1[(0:13)==strat_table[istratum+8, iyear*4-1], iyear+1] %>% as.character# min date king
+    strat_table[istratum+8, iyear*4+2] <- lastdates1[(0:13)==strat_table[istratum+8, iyear*4-0], iyear+1] %>% as.character# max date king
+  }
+}
+names(strat_table) <- c("Fishery","Stratum", paste(rep(years, each=4), c("min_week","max_week","min_date","max_date")))
+
+write.csv(strat_table, file="output/strat_table.csv")
+
 write.csv(T5_update, file="output/T5_update.csv")
 write.csv(T6_update, file="output/T6_update.csv")
 
@@ -680,3 +848,4 @@ for(i in 1:4) write.csv(CSD_RED_ASL_update[[i]], file=paste0("output/T", tbl_num
 # KING_ASL_update  
 tbl_num <- c(12, 15, 18, 21)
 for(i in 1:4) write.csv(KING_ASL_update[[i]], file=paste0("output/T", tbl_num[i], "_update.csv"))
+
