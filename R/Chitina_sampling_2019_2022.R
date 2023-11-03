@@ -834,6 +834,7 @@ names(strat_table) <- c("Fishery","Stratum", paste(rep(years, each=4), c("min_we
 
 write.csv(strat_table, file="output/strat_table.csv")
 
+T5_update[nrow(T5_update), ncol(T5_update)-0:2] <- NA  # taking out inestimable
 write.csv(T5_update, file="output/T5_update.csv")
 write.csv(T6_update, file="output/T6_update.csv")
 
